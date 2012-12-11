@@ -12,7 +12,7 @@
  */
 class Item extends CActiveRecord
 {
-    public $yPosition,$lineMaxCount, $fontSize, $fixLeft, $shadowFix;
+    public $yPosition,$lineMaxCount, $fontSize, $fixLeft, $shadowFix, $width, $height;
 	/**
 	 * Returns the static model of the specified AR class.
 	 * @param string $className active record class name.
@@ -109,7 +109,11 @@ class Item extends CActiveRecord
             $detailArray = array();
         }
 
-        $fixArray = array("yPosition", "lineMaxCount", "fontSize", "fixLeft", "shadowFix");
+        if(!empty($this->photo)){
+            list($this->width, $this->height) = getimagesize(str_replace(Yii::app()->baseUrl."/","",$this->photo) );
+        }
+
+        $fixArray = array("yPosition", "lineMaxCount", "fontSize", "fixLeft", "shadowFix", "width", "height");
         foreach($fixArray as $fix){
            if(!empty($this->$fix)){
                $detailArray[$fix] = $this->$fix;

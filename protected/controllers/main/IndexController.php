@@ -2,16 +2,26 @@
 
 class IndexController extends Controller
 {
-    public $layout = "layouts/front";
+    public $layout = "////layouts/front";
 
     public function init(){
     }
 
 	public function actionIndex()
 	{
-        $items = Item::model()->findAll();
+        $request = Yii::app()->request;
+        $pk = $request->getParam("pk");
+        if(is_numeric($pk))
+            $theItem = Item::model()->findByPk($pk);
+        if(!empty($theItem) && $theItem != null){
+        }else{
+            throw new CHttpException("404");
+        }
+
+
 		$this->render('index', array(
-                'items' => $items,
+                'theItem' => $theItem,
+                'pk' => $pk,
             )
         );
 	}
@@ -61,41 +71,16 @@ class IndexController extends Controller
                 $subtitle->ctime = time();
                 $subtitle->item_id = $item_id;
                 $subtitle->subtilte_info = serialize($subtitle);
-                $subtitle->subtilte_photo = $newPhoto->fullpath;
+                $subtitle->subtilte_photo = Yii::app()->baseUrl."/".$newPhoto->fullpath;
 
                 if($subtitle->save()){
                     $this->redirect($subtitle->subtilte_photo);
                 }else{
+                    /*
                     var_dump($subtitle->getErrors());
+                    */
                 }
             }
         }
     }
-
-	// Uncomment the following methods and override them if needed
-	/*
-	public function filters()
-	{
-		// return the filter configuration for this controller, e.g.:
-		return array(
-			'inlineFilterName',
-			array(
-				'class'=>'path.to.FilterClass',
-				'propertyName'=>'propertyValue',
-			),
-		);
-	}
-
-	public function actions()
-	{
-		// return external action classes, e.g.:
-		return array(
-			'action1'=>'path.to.ActionClass',
-			'action2'=>array(
-				'class'=>'path.to.AnotherActionClass',
-				'propertyName'=>'propertyValue',
-			),
-		);
-	}
-	*/
 }

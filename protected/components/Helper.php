@@ -39,6 +39,7 @@ class Helper extends CController
             if(!empty($subV))
                 $newSub[] = $subV;
         }
+        $newSub = array_reverse($newSub);
         return $newSub;
     }
 }

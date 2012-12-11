@@ -98,4 +98,19 @@ class PhotoEditor
         $left_padding_text = ($this->lineMaxCount - $textLength + $this->fixLeft) * $this->fontSize / 2;
         return $left_padding_text;
     }
+
+    //text input 样式计算
+    public static function countInputStyle($picWidth, $yArray){
+        $inputWidth = $inputLeft = "";
+        $yFinalArray = array();
+        if(!empty($picWidth) && !empty($yArray)){
+            $inputWidth = ceil($picWidth * 2 / 3);
+            $inputLeft = ceil(($picWidth - $inputWidth) / 2);
+            foreach($yArray as $y){
+                $yFinalArray[] = $y - 18;
+                $yFinalArray[] = $y - 40;
+            }
+        }
+        return array('inputWidth'=>$inputWidth, 'inputLeft'=>$inputLeft, 'yFinalArray'=>$yFinalArray );
+    }
 }

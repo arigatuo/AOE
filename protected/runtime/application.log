@@ -1185,3 +1185,429 @@ Stack trace:
 #10 {main}
 REQUEST_URI=/AOE/index.php?r=Test/testbg
 ---
+2012/12/10 23:38:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "Index".' in /var/www/html/yii/web/CController.php:484
+Stack trace:
+#0 /var/www/html/yii/web/CController.php(271): CController->missingAction('Index')
+#1 /var/www/html/yii/web/CWebApplication.php(283): CController->run('Index')
+#2 /var/www/html/yii/web/CWebApplication.php(142): CWebApplication->runController('Test/Index')
+#3 /var/www/html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /var/www/html/AOE/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/AOE/index.php?r=Test/Index
+---
+2012/12/10 23:40:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "testb".' in /var/www/html/yii/web/CController.php:484
+Stack trace:
+#0 /var/www/html/yii/web/CController.php(271): CController->missingAction('testb')
+#1 /var/www/html/yii/web/CWebApplication.php(283): CController->run('testb')
+#2 /var/www/html/yii/web/CWebApplication.php(142): CWebApplication->runController('Test/testb')
+#3 /var/www/html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /var/www/html/AOE/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/AOE/index.php?r=Test/testb
+---
+2012/12/11 00:45:02 [error] [php] getimagesize(/AOE/upload/20121210/a7ba4fb992a50c4fbd7b1e32fb3f419c.jpg): failed to open stream: No such file or directory (/var/www/html/AOE/protected/views/test/testbg.php:5)
+Stack trace:
+#0 /var/www/html/yii/web/CBaseController.php(96): TestController->renderInternal()
+#1 /var/www/html/yii/web/CController.php(870): TestController->renderFile()
+#2 /var/www/html/yii/web/CController.php(783): TestController->renderPartial()
+#3 /var/www/html/AOE/protected/controllers/TestController.php(59): TestController->render()
+#4 /var/www/html/yii/web/actions/CInlineAction.php(50): TestController->actionTestBg()
+#5 /var/www/html/yii/web/CController.php(309): CInlineAction->runWithParams()
+#6 /var/www/html/yii/web/CController.php(287): TestController->runAction()
+#7 /var/www/html/yii/web/CController.php(266): TestController->runActionWithFilters()
+#8 /var/www/html/yii/web/CWebApplication.php(283): TestController->run()
+#9 /var/www/html/yii/web/CWebApplication.php(142): CWebApplication->runController()
+#10 /var/www/html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#11 /var/www/html/AOE/index.php(13): CWebApplication->run()
+REQUEST_URI=/AOE/index.php?r=Test/testbg
+in /var/www/html/AOE/protected/views/test/testbg.php (5)
+in /var/www/html/AOE/protected/controllers/TestController.php (59)
+in /var/www/html/AOE/index.php (13)
+2012/12/11 00:45:51 [error] [php] Invalid argument supplied for foreach() (/var/www/html/AOE/protected/components/PhotoEditor.php:107)
+Stack trace:
+#0 /var/www/html/yii/web/CBaseController.php(96): TestController->renderInternal()
+#1 /var/www/html/yii/web/CController.php(870): TestController->renderFile()
+#2 /var/www/html/yii/web/CController.php(783): TestController->renderPartial()
+#3 /var/www/html/AOE/protected/controllers/TestController.php(59): TestController->render()
+#4 /var/www/html/yii/web/actions/CInlineAction.php(50): TestController->actionTestBg()
+#5 /var/www/html/yii/web/CController.php(309): CInlineAction->runWithParams()
+#6 /var/www/html/yii/web/CController.php(287): TestController->runAction()
+#7 /var/www/html/yii/web/CController.php(266): TestController->runActionWithFilters()
+#8 /var/www/html/yii/web/CWebApplication.php(283): TestController->run()
+#9 /var/www/html/yii/web/CWebApplication.php(142): CWebApplication->runController()
+#10 /var/www/html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#11 /var/www/html/AOE/index.php(13): CWebApplication->run()
+REQUEST_URI=/AOE/index.php?r=Test/testbg
+in /var/www/html/AOE/protected/components/PhotoEditor.php (107)
+in /var/www/html/AOE/protected/views/test/testbg.php (11)
+in /var/www/html/AOE/protected/controllers/TestController.php (59)
+2012/12/11 22:13:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "upload".' in /var/www/html/yii/web/CController.php:484
+Stack trace:
+#0 /var/www/html/yii/web/CController.php(271): CController->missingAction('upload')
+#1 /var/www/html/yii/web/CWebApplication.php(283): CController->run('upload')
+#2 /var/www/html/yii/web/CWebApplication.php(142): CWebApplication->runController('bg/subtitle/upl...')
+#3 /var/www/html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /var/www/html/AOE/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/AOE/bg/subtitle/upload/20121210/f02750ad742fdf9709c481ab50ce429d.jpg
+HTTP_REFERER=http://www.myapp.com/AOE/bg/subtitle/admin
+---
+2012/12/11 22:13:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "upload".' in /var/www/html/yii/web/CController.php:484
+Stack trace:
+#0 /var/www/html/yii/web/CController.php(271): CController->missingAction('upload')
+#1 /var/www/html/yii/web/CWebApplication.php(283): CController->run('upload')
+#2 /var/www/html/yii/web/CWebApplication.php(142): CWebApplication->runController('bg/subtitle/upl...')
+#3 /var/www/html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /var/www/html/AOE/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/AOE/bg/subtitle/upload/20121210/733a2eb3fe6035271ec2044d51dc3690.jpg
+HTTP_REFERER=http://www.myapp.com/AOE/bg/subtitle/admin
+---
+2012/12/11 22:13:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "upload".' in /var/www/html/yii/web/CController.php:484
+Stack trace:
+#0 /var/www/html/yii/web/CController.php(271): CController->missingAction('upload')
+#1 /var/www/html/yii/web/CWebApplication.php(283): CController->run('upload')
+#2 /var/www/html/yii/web/CWebApplication.php(142): CWebApplication->runController('bg/subtitle/upl...')
+#3 /var/www/html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /var/www/html/AOE/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/AOE/bg/subtitle/upload/20121210/bafb011dcac9958269884af4ccc0de2c.jpg
+HTTP_REFERER=http://www.myapp.com/AOE/bg/subtitle/admin
+---
+2012/12/11 22:13:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "upload".' in /var/www/html/yii/web/CController.php:484
+Stack trace:
+#0 /var/www/html/yii/web/CController.php(271): CController->missingAction('upload')
+#1 /var/www/html/yii/web/CWebApplication.php(283): CController->run('upload')
+#2 /var/www/html/yii/web/CWebApplication.php(142): CWebApplication->runController('bg/subtitle/upl...')
+#3 /var/www/html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /var/www/html/AOE/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/AOE/bg/subtitle/upload/20121210/98e99c294c3ed359971da120a65ea2b2.jpg
+HTTP_REFERER=http://www.myapp.com/AOE/bg/subtitle/admin
+---
+2012/12/11 22:13:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "upload".' in /var/www/html/yii/web/CController.php:484
+Stack trace:
+#0 /var/www/html/yii/web/CController.php(271): CController->missingAction('upload')
+#1 /var/www/html/yii/web/CWebApplication.php(283): CController->run('upload')
+#2 /var/www/html/yii/web/CWebApplication.php(142): CWebApplication->runController('bg/subtitle/upl...')
+#3 /var/www/html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /var/www/html/AOE/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/AOE/bg/subtitle/upload/20121210/065783f82adf85faa538e31e5499e3af.jpg
+HTTP_REFERER=http://www.myapp.com/AOE/bg/subtitle/admin
+---
+2012/12/11 22:13:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "upload".' in /var/www/html/yii/web/CController.php:484
+Stack trace:
+#0 /var/www/html/yii/web/CController.php(271): CController->missingAction('upload')
+#1 /var/www/html/yii/web/CWebApplication.php(283): CController->run('upload')
+#2 /var/www/html/yii/web/CWebApplication.php(142): CWebApplication->runController('bg/subtitle/upl...')
+#3 /var/www/html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /var/www/html/AOE/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/AOE/bg/subtitle/upload/20121210/e6fccd97e0cb588ad196c7ad2ba60a62.jpg
+HTTP_REFERER=http://www.myapp.com/AOE/bg/subtitle/admin
+---
+2012/12/11 22:13:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "upload".' in /var/www/html/yii/web/CController.php:484
+Stack trace:
+#0 /var/www/html/yii/web/CController.php(271): CController->missingAction('upload')
+#1 /var/www/html/yii/web/CWebApplication.php(283): CController->run('upload')
+#2 /var/www/html/yii/web/CWebApplication.php(142): CWebApplication->runController('bg/subtitle/upl...')
+#3 /var/www/html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /var/www/html/AOE/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/AOE/bg/subtitle/upload/20121210/ebd8e30902f86a11e1a36c46d0ee0e38.jpg
+HTTP_REFERER=http://www.myapp.com/AOE/bg/subtitle/admin
+---
+2012/12/11 22:13:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "upload".' in /var/www/html/yii/web/CController.php:484
+Stack trace:
+#0 /var/www/html/yii/web/CController.php(271): CController->missingAction('upload')
+#1 /var/www/html/yii/web/CWebApplication.php(283): CController->run('upload')
+#2 /var/www/html/yii/web/CWebApplication.php(142): CWebApplication->runController('bg/subtitle/upl...')
+#3 /var/www/html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /var/www/html/AOE/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/AOE/bg/subtitle/upload/20121210/98e99c294c3ed359971da120a65ea2b2.jpg
+HTTP_REFERER=http://www.myapp.com/AOE/bg/subtitle/admin
+---
+2012/12/11 22:13:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "upload".' in /var/www/html/yii/web/CController.php:484
+Stack trace:
+#0 /var/www/html/yii/web/CController.php(271): CController->missingAction('upload')
+#1 /var/www/html/yii/web/CWebApplication.php(283): CController->run('upload')
+#2 /var/www/html/yii/web/CWebApplication.php(142): CWebApplication->runController('bg/subtitle/upl...')
+#3 /var/www/html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /var/www/html/AOE/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/AOE/bg/subtitle/upload/20121210/065783f82adf85faa538e31e5499e3af.jpg
+HTTP_REFERER=http://www.myapp.com/AOE/bg/subtitle/admin
+---
+2012/12/11 22:13:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "upload".' in /var/www/html/yii/web/CController.php:484
+Stack trace:
+#0 /var/www/html/yii/web/CController.php(271): CController->missingAction('upload')
+#1 /var/www/html/yii/web/CWebApplication.php(283): CController->run('upload')
+#2 /var/www/html/yii/web/CWebApplication.php(142): CWebApplication->runController('bg/subtitle/upl...')
+#3 /var/www/html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /var/www/html/AOE/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/AOE/bg/subtitle/upload/20121210/e6fccd97e0cb588ad196c7ad2ba60a62.jpg
+HTTP_REFERER=http://www.myapp.com/AOE/bg/subtitle/admin
+---
+2012/12/11 22:13:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "upload".' in /var/www/html/yii/web/CController.php:484
+Stack trace:
+#0 /var/www/html/yii/web/CController.php(271): CController->missingAction('upload')
+#1 /var/www/html/yii/web/CWebApplication.php(283): CController->run('upload')
+#2 /var/www/html/yii/web/CWebApplication.php(142): CWebApplication->runController('bg/subtitle/upl...')
+#3 /var/www/html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /var/www/html/AOE/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/AOE/bg/subtitle/upload/20121210/bafb011dcac9958269884af4ccc0de2c.jpg
+HTTP_REFERER=http://www.myapp.com/AOE/bg/subtitle/admin
+---
+2012/12/11 22:13:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "upload".' in /var/www/html/yii/web/CController.php:484
+Stack trace:
+#0 /var/www/html/yii/web/CController.php(271): CController->missingAction('upload')
+#1 /var/www/html/yii/web/CWebApplication.php(283): CController->run('upload')
+#2 /var/www/html/yii/web/CWebApplication.php(142): CWebApplication->runController('bg/subtitle/upl...')
+#3 /var/www/html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /var/www/html/AOE/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/AOE/bg/subtitle/upload/20121210/733a2eb3fe6035271ec2044d51dc3690.jpg
+HTTP_REFERER=http://www.myapp.com/AOE/bg/subtitle/admin
+---
+2012/12/11 22:13:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "upload".' in /var/www/html/yii/web/CController.php:484
+Stack trace:
+#0 /var/www/html/yii/web/CController.php(271): CController->missingAction('upload')
+#1 /var/www/html/yii/web/CWebApplication.php(283): CController->run('upload')
+#2 /var/www/html/yii/web/CWebApplication.php(142): CWebApplication->runController('bg/subtitle/upl...')
+#3 /var/www/html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /var/www/html/AOE/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/AOE/bg/subtitle/upload/20121210/f02750ad742fdf9709c481ab50ce429d.jpg
+HTTP_REFERER=http://www.myapp.com/AOE/bg/subtitle/admin
+---
+2012/12/11 22:13:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "upload".' in /var/www/html/yii/web/CController.php:484
+Stack trace:
+#0 /var/www/html/yii/web/CController.php(271): CController->missingAction('upload')
+#1 /var/www/html/yii/web/CWebApplication.php(283): CController->run('upload')
+#2 /var/www/html/yii/web/CWebApplication.php(142): CWebApplication->runController('bg/subtitle/upl...')
+#3 /var/www/html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /var/www/html/AOE/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/AOE/bg/subtitle/upload/20121210/ebd8e30902f86a11e1a36c46d0ee0e38.jpg
+HTTP_REFERER=http://www.myapp.com/AOE/bg/subtitle/admin
+---
+2012/12/11 22:13:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "upload".' in /var/www/html/yii/web/CController.php:484
+Stack trace:
+#0 /var/www/html/yii/web/CController.php(271): CController->missingAction('upload')
+#1 /var/www/html/yii/web/CWebApplication.php(283): CController->run('upload')
+#2 /var/www/html/yii/web/CWebApplication.php(142): CWebApplication->runController('bg/subtitle/upl...')
+#3 /var/www/html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /var/www/html/AOE/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/AOE/bg/subtitle/upload/20121210/f02750ad742fdf9709c481ab50ce429d.jpg
+HTTP_REFERER=http://www.myapp.com/AOE/bg/subtitle/admin
+---
+2012/12/11 22:13:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "upload".' in /var/www/html/yii/web/CController.php:484
+Stack trace:
+#0 /var/www/html/yii/web/CController.php(271): CController->missingAction('upload')
+#1 /var/www/html/yii/web/CWebApplication.php(283): CController->run('upload')
+#2 /var/www/html/yii/web/CWebApplication.php(142): CWebApplication->runController('bg/subtitle/upl...')
+#3 /var/www/html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /var/www/html/AOE/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/AOE/bg/subtitle/upload/20121210/065783f82adf85faa538e31e5499e3af.jpg
+HTTP_REFERER=http://www.myapp.com/AOE/bg/subtitle/admin
+---
+2012/12/11 22:13:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "upload".' in /var/www/html/yii/web/CController.php:484
+Stack trace:
+#0 /var/www/html/yii/web/CController.php(271): CController->missingAction('upload')
+#1 /var/www/html/yii/web/CWebApplication.php(283): CController->run('upload')
+#2 /var/www/html/yii/web/CWebApplication.php(142): CWebApplication->runController('bg/subtitle/upl...')
+#3 /var/www/html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /var/www/html/AOE/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/AOE/bg/subtitle/upload/20121210/733a2eb3fe6035271ec2044d51dc3690.jpg
+HTTP_REFERER=http://www.myapp.com/AOE/bg/subtitle/admin
+---
+2012/12/11 22:13:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "upload".' in /var/www/html/yii/web/CController.php:484
+Stack trace:
+#0 /var/www/html/yii/web/CController.php(271): CController->missingAction('upload')
+#1 /var/www/html/yii/web/CWebApplication.php(283): CController->run('upload')
+#2 /var/www/html/yii/web/CWebApplication.php(142): CWebApplication->runController('bg/subtitle/upl...')
+#3 /var/www/html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /var/www/html/AOE/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/AOE/bg/subtitle/upload/20121210/98e99c294c3ed359971da120a65ea2b2.jpg
+HTTP_REFERER=http://www.myapp.com/AOE/bg/subtitle/admin
+---
+2012/12/11 22:13:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "upload".' in /var/www/html/yii/web/CController.php:484
+Stack trace:
+#0 /var/www/html/yii/web/CController.php(271): CController->missingAction('upload')
+#1 /var/www/html/yii/web/CWebApplication.php(283): CController->run('upload')
+#2 /var/www/html/yii/web/CWebApplication.php(142): CWebApplication->runController('bg/subtitle/upl...')
+#3 /var/www/html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /var/www/html/AOE/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/AOE/bg/subtitle/upload/20121210/f02750ad742fdf9709c481ab50ce429d.jpg
+HTTP_REFERER=http://www.myapp.com/AOE/bg/subtitle/admin
+---
+2012/12/11 22:13:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "upload".' in /var/www/html/yii/web/CController.php:484
+Stack trace:
+#0 /var/www/html/yii/web/CController.php(271): CController->missingAction('upload')
+#1 /var/www/html/yii/web/CWebApplication.php(283): CController->run('upload')
+#2 /var/www/html/yii/web/CWebApplication.php(142): CWebApplication->runController('bg/subtitle/upl...')
+#3 /var/www/html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /var/www/html/AOE/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/AOE/bg/subtitle/upload/20121210/bafb011dcac9958269884af4ccc0de2c.jpg
+HTTP_REFERER=http://www.myapp.com/AOE/bg/subtitle/admin
+---
+2012/12/11 22:13:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "upload".' in /var/www/html/yii/web/CController.php:484
+Stack trace:
+#0 /var/www/html/yii/web/CController.php(271): CController->missingAction('upload')
+#1 /var/www/html/yii/web/CWebApplication.php(283): CController->run('upload')
+#2 /var/www/html/yii/web/CWebApplication.php(142): CWebApplication->runController('bg/subtitle/upl...')
+#3 /var/www/html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /var/www/html/AOE/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/AOE/bg/subtitle/upload/20121210/e6fccd97e0cb588ad196c7ad2ba60a62.jpg
+HTTP_REFERER=http://www.myapp.com/AOE/bg/subtitle/admin
+---
+2012/12/11 22:13:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "upload".' in /var/www/html/yii/web/CController.php:484
+Stack trace:
+#0 /var/www/html/yii/web/CController.php(271): CController->missingAction('upload')
+#1 /var/www/html/yii/web/CWebApplication.php(283): CController->run('upload')
+#2 /var/www/html/yii/web/CWebApplication.php(142): CWebApplication->runController('bg/subtitle/upl...')
+#3 /var/www/html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /var/www/html/AOE/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/AOE/bg/subtitle/upload/20121210/ebd8e30902f86a11e1a36c46d0ee0e38.jpg
+HTTP_REFERER=http://www.myapp.com/AOE/bg/subtitle/admin
+---
+2012/12/11 22:14:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "upload".' in /var/www/html/yii/web/CController.php:484
+Stack trace:
+#0 /var/www/html/yii/web/CController.php(271): CController->missingAction('upload')
+#1 /var/www/html/yii/web/CWebApplication.php(283): CController->run('upload')
+#2 /var/www/html/yii/web/CWebApplication.php(142): CWebApplication->runController('bg/subtitle/upl...')
+#3 /var/www/html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /var/www/html/AOE/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/AOE/bg/subtitle/upload/20121210/f02750ad742fdf9709c481ab50ce429d.jpg
+HTTP_REFERER=http://www.myapp.com/AOE/bg/subtitle/admin
+---
+2012/12/11 22:14:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "upload".' in /var/www/html/yii/web/CController.php:484
+Stack trace:
+#0 /var/www/html/yii/web/CController.php(271): CController->missingAction('upload')
+#1 /var/www/html/yii/web/CWebApplication.php(283): CController->run('upload')
+#2 /var/www/html/yii/web/CWebApplication.php(142): CWebApplication->runController('bg/subtitle/upl...')
+#3 /var/www/html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /var/www/html/AOE/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/AOE/bg/subtitle/upload/20121210/f02750ad742fdf9709c481ab50ce429d.jpg
+---
+2012/12/11 22:20:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "Index/create".' in /var/www/html/yii/web/CWebApplication.php:287
+Stack trace:
+#0 /var/www/html/yii/web/CWebApplication.php(142): CWebApplication->runController('Index/create')
+#1 /var/www/html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/AOE/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/AOE/Index/create
+---
+2012/12/11 22:20:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "Index/Create".' in /var/www/html/yii/web/CWebApplication.php:287
+Stack trace:
+#0 /var/www/html/yii/web/CWebApplication.php(142): CWebApplication->runController('Index/Create')
+#1 /var/www/html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/AOE/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/AOE/Index/Create
+---
+2012/12/11 23:02:37 [error] [php] Undefined variable: items (/var/www/html/AOE/protected/views/test/testbg.php:18)
+Stack trace:
+#0 /var/www/html/yii/web/CController.php(870): TestController->renderFile()
+#1 /var/www/html/yii/web/CController.php(783): TestController->renderPartial()
+#2 /var/www/html/AOE/protected/controllers/TestController.php(59): TestController->render()
+#3 /var/www/html/yii/web/actions/CInlineAction.php(50): TestController->actionTestBg()
+#4 /var/www/html/yii/web/CController.php(309): CInlineAction->runWithParams()
+#5 /var/www/html/yii/web/CController.php(287): TestController->runAction()
+#6 /var/www/html/yii/web/CController.php(266): TestController->runActionWithFilters()
+#7 /var/www/html/yii/web/CWebApplication.php(283): TestController->run()
+#8 /var/www/html/yii/web/CWebApplication.php(142): CWebApplication->runController()
+#9 /var/www/html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /var/www/html/AOE/index.php(13): CWebApplication->run()
+REQUEST_URI=/AOE/Test/testbg
+in /var/www/html/AOE/protected/views/test/testbg.php (18)
+in /var/www/html/AOE/protected/controllers/TestController.php (59)
+in /var/www/html/AOE/index.php (13)
+2012/12/11 23:14:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "Index".' in /var/www/html/yii/web/CWebApplication.php:287
+Stack trace:
+#0 /var/www/html/yii/web/CWebApplication.php(142): CWebApplication->runController('Index')
+#1 /var/www/html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/AOE/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/AOE/Index
+---
+2012/12/11 23:46:23 [error] [exception.CHttpException.404] exception 'CHttpException' in /var/www/html/AOE/protected/controllers/main/IndexController.php:17
+Stack trace:
+#0 /var/www/html/yii/web/actions/CInlineAction.php(50): IndexController->actionIndex()
+#1 /var/www/html/yii/web/CController.php(309): CInlineAction->runWithParams(Array)
+#2 /var/www/html/yii/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#3 /var/www/html/yii/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#4 /var/www/html/yii/web/CWebApplication.php(283): CController->run('')
+#5 /var/www/html/yii/web/CWebApplication.php(142): CWebApplication->runController('main/Index')
+#6 /var/www/html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#7 /var/www/html/AOE/index.php(13): CApplication->run()
+#8 {main}
+REQUEST_URI=/AOE/main/Index/
+---
+2012/12/11 23:46:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "pk".' in /var/www/html/yii/web/CController.php:484
+Stack trace:
+#0 /var/www/html/yii/web/CController.php(271): CController->missingAction('pk')
+#1 /var/www/html/yii/web/CWebApplication.php(283): CController->run('pk')
+#2 /var/www/html/yii/web/CWebApplication.php(142): CWebApplication->runController('main/Index/pk/6')
+#3 /var/www/html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /var/www/html/AOE/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/AOE/main/Index/pk/6
+---
+2012/12/11 23:47:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "pk".' in /var/www/html/yii/web/CController.php:484
+Stack trace:
+#0 /var/www/html/yii/web/CController.php(271): CController->missingAction('pk')
+#1 /var/www/html/yii/web/CWebApplication.php(283): CController->run('pk')
+#2 /var/www/html/yii/web/CWebApplication.php(142): CWebApplication->runController('main/Index/pk/6')
+#3 /var/www/html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /var/www/html/AOE/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/AOE/main/Index/pk/6
+---
+2012/12/11 23:47:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "pk".' in /var/www/html/yii/web/CController.php:484
+Stack trace:
+#0 /var/www/html/yii/web/CController.php(271): CController->missingAction('pk')
+#1 /var/www/html/yii/web/CWebApplication.php(283): CController->run('pk')
+#2 /var/www/html/yii/web/CWebApplication.php(142): CWebApplication->runController('main/Index/pk/6')
+#3 /var/www/html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /var/www/html/AOE/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/AOE/main/Index/pk/6/
+---
+2012/12/12 00:42:36 [error] [php] getimagesize(/AOE/upload/20121209/5fc5e773a3e7cf5dfa184bb1b551d3da.jpg): failed to open stream: No such file or directory (/var/www/html/AOE/protected/models/Item.php:113)
+Stack trace:
+#0 /var/www/html/yii/db/ar/CActiveRecord.php(796): Item->update()
+#1 /var/www/html/AOE/protected/controllers/bg/ItemController.php(88): Item->save()
+#2 unknown(0): ItemController->actionUpdate()
+#3 /var/www/html/yii/web/actions/CAction.php(107): ReflectionMethod->invokeArgs()
+#4 /var/www/html/yii/web/actions/CInlineAction.php(48): CInlineAction->runWithParamsInternal()
+#5 /var/www/html/yii/web/CController.php(309): CInlineAction->runWithParams()
+#6 /var/www/html/yii/web/filters/CFilterChain.php(134): ItemController->runAction()
+#7 /var/www/html/yii/web/filters/CFilter.php(41): CFilterChain->run()
+#8 /var/www/html/yii/web/CController.php(1146): CAccessControlFilter->filter()
+#9 /var/www/html/yii/web/filters/CInlineFilter.php(59): ItemController->filterAccessControl()
+#10 /var/www/html/yii/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#11 /var/www/html/yii/web/CController.php(292): CFilterChain->run()
+#12 /var/www/html/yii/web/CController.php(266): ItemController->runActionWithFilters()
+#13 /var/www/html/yii/web/CWebApplication.php(283): ItemController->run()
+#14 /var/www/html/yii/web/CWebApplication.php(142): CWebApplication->runController()
+#15 /var/www/html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#16 /var/www/html/AOE/index.php(13): CWebApplication->run()
+REQUEST_URI=/AOE/bg/item/update/id/5
+in /var/www/html/AOE/protected/models/Item.php (113)
+in /var/www/html/AOE/protected/controllers/bg/ItemController.php (88)
+in /var/www/html/AOE/index.php (13)
