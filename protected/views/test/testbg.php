@@ -6,9 +6,9 @@
     $imageWidth = $imageInfo[0];
 
     $details = unserialize($theItemAttributes['Details']);
-    $yPostion = explode(";", $details['yPosition']);
+    $yPosition = explode(";", $details['yPosition']);
 
-    $style = PhotoEditor::countInputStyle($imageWidth, $yPostion);
+    $style = PhotoEditor::countInputStyle($imageWidth, $yPosition);
 ?>
 <style>
     #bg{position:relative;background:url("<?php echo $theItemAttributes['photo'];?>") no-repeat;width:<?php echo $imageWidth?>px;height:<?php echo $imageInfo[1];?>px;border:0;margin:0;padding:0}
