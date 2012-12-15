@@ -1611,3 +1611,131 @@ REQUEST_URI=/AOE/bg/item/update/id/5
 in /var/www/html/AOE/protected/models/Item.php (113)
 in /var/www/html/AOE/protected/controllers/bg/ItemController.php (88)
 in /var/www/html/AOE/index.php (13)
+2012/12/12 23:10:35 [error] [exception.CHttpException.404] exception 'CHttpException' in /var/www/html/AOE/protected/controllers/main/IndexController.php:18
+Stack trace:
+#0 /var/www/html/yii/web/actions/CInlineAction.php(50): IndexController->actionIndex()
+#1 /var/www/html/yii/web/CController.php(309): CInlineAction->runWithParams(Array)
+#2 /var/www/html/yii/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#3 /var/www/html/yii/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#4 /var/www/html/yii/web/CWebApplication.php(283): CController->run('')
+#5 /var/www/html/yii/web/CWebApplication.php(142): CWebApplication->runController('main/index')
+#6 /var/www/html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#7 /var/www/html/AOE/index.php(13): CApplication->run()
+#8 {main}
+REQUEST_URI=/AOE/main/index
+---
+2012/12/12 23:10:39 [error] [exception.CHttpException.404] exception 'CHttpException' in /var/www/html/AOE/protected/controllers/main/IndexController.php:18
+Stack trace:
+#0 /var/www/html/yii/web/actions/CInlineAction.php(50): IndexController->actionIndex()
+#1 /var/www/html/yii/web/CController.php(309): CInlineAction->runWithParams(Array)
+#2 /var/www/html/yii/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#3 /var/www/html/yii/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#4 /var/www/html/yii/web/CWebApplication.php(283): CController->run('')
+#5 /var/www/html/yii/web/CWebApplication.php(142): CWebApplication->runController('main/Index')
+#6 /var/www/html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#7 /var/www/html/AOE/index.php(13): CApplication->run()
+#8 {main}
+REQUEST_URI=/AOE/main/Index
+---
+2012/12/12 23:13:54 [error] [exception.CHttpException.404] exception 'CHttpException' in /var/www/html/AOE/protected/controllers/main/IndexController.php:18
+Stack trace:
+#0 /var/www/html/yii/web/actions/CInlineAction.php(50): IndexController->actionIndex()
+#1 /var/www/html/yii/web/CController.php(309): CInlineAction->runWithParams(Array)
+#2 /var/www/html/yii/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#3 /var/www/html/yii/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#4 /var/www/html/yii/web/CWebApplication.php(283): CController->run('index')
+#5 /var/www/html/yii/web/CWebApplication.php(142): CWebApplication->runController('main/index/inde...')
+#6 /var/www/html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#7 /var/www/html/AOE/index.php(13): CApplication->run()
+#8 {main}
+REQUEST_URI=/AOE/main/index/index
+---
+2012/12/12 23:13:59 [error] [exception.CHttpException.404] exception 'CHttpException' in /var/www/html/AOE/protected/controllers/main/IndexController.php:18
+Stack trace:
+#0 /var/www/html/yii/web/actions/CInlineAction.php(50): IndexController->actionIndex()
+#1 /var/www/html/yii/web/CController.php(309): CInlineAction->runWithParams(Array)
+#2 /var/www/html/yii/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#3 /var/www/html/yii/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#4 /var/www/html/yii/web/CWebApplication.php(283): CController->run('index')
+#5 /var/www/html/yii/web/CWebApplication.php(142): CWebApplication->runController('main/Index/inde...')
+#6 /var/www/html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#7 /var/www/html/AOE/index.php(13): CApplication->run()
+#8 {main}
+REQUEST_URI=/AOE/main/Index/index
+---
+2012/12/12 23:14:24 [error] [exception.CHttpException.404] exception 'CHttpException' in /var/www/html/AOE/protected/controllers/main/IndexController.php:18
+Stack trace:
+#0 /var/www/html/yii/web/actions/CInlineAction.php(50): IndexController->actionIndex()
+#1 /var/www/html/yii/web/CController.php(309): CInlineAction->runWithParams(Array)
+#2 /var/www/html/yii/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#3 /var/www/html/yii/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#4 /var/www/html/yii/web/CWebApplication.php(283): CController->run('')
+#5 /var/www/html/yii/web/CWebApplication.php(142): CWebApplication->runController('main/Index')
+#6 /var/www/html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#7 /var/www/html/AOE/index.php(13): CApplication->run()
+#8 {main}
+REQUEST_URI=/AOE/main/Index
+---
+2012/12/12 23:14:47 [error] [exception.CHttpException.404] exception 'CHttpException' in /var/www/html/AOE/protected/controllers/main/IndexController.php:18
+Stack trace:
+#0 /var/www/html/yii/web/actions/CInlineAction.php(50): IndexController->actionIndex()
+#1 /var/www/html/yii/web/CController.php(309): CInlineAction->runWithParams(Array)
+#2 /var/www/html/yii/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#3 /var/www/html/yii/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#4 /var/www/html/yii/web/CWebApplication.php(283): CController->run('index')
+#5 /var/www/html/yii/web/CWebApplication.php(142): CWebApplication->runController('main/Index/inde...')
+#6 /var/www/html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#7 /var/www/html/AOE/index.php(13): CApplication->run()
+#8 {main}
+REQUEST_URI=/AOE/main/Index/index
+---
+2012/12/12 23:50:40 [error] [php] Undefined index: line_max_count (/var/www/html/AOE/protected/views/main/index/index.php:34)
+Stack trace:
+#0 /var/www/html/yii/web/CController.php(870): IndexController->renderFile()
+#1 /var/www/html/yii/web/CController.php(783): IndexController->renderPartial()
+#2 /var/www/html/AOE/protected/controllers/main/IndexController.php(28): IndexController->render()
+#3 /var/www/html/yii/web/actions/CInlineAction.php(50): IndexController->actionIndex()
+#4 /var/www/html/yii/web/CController.php(309): CInlineAction->runWithParams()
+#5 /var/www/html/yii/web/CController.php(287): IndexController->runAction()
+#6 /var/www/html/yii/web/CController.php(266): IndexController->runActionWithFilters()
+#7 /var/www/html/yii/web/CWebApplication.php(283): IndexController->run()
+#8 /var/www/html/yii/web/CWebApplication.php(142): CWebApplication->runController()
+#9 /var/www/html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /var/www/html/AOE/index.php(13): CWebApplication->run()
+REQUEST_URI=/AOE/main/Index?pk=6
+in /var/www/html/AOE/protected/views/main/index/index.php (34)
+in /var/www/html/AOE/protected/controllers/main/IndexController.php (28)
+in /var/www/html/AOE/index.php (13)
+2012/12/12 23:52:14 [error] [php] Undefined index: lineMaxCount (/var/www/html/AOE/protected/views/main/index/index.php:34)
+Stack trace:
+#0 /var/www/html/yii/web/CController.php(870): IndexController->renderFile()
+#1 /var/www/html/yii/web/CController.php(783): IndexController->renderPartial()
+#2 /var/www/html/AOE/protected/controllers/main/IndexController.php(28): IndexController->render()
+#3 /var/www/html/yii/web/actions/CInlineAction.php(50): IndexController->actionIndex()
+#4 /var/www/html/yii/web/CController.php(309): CInlineAction->runWithParams()
+#5 /var/www/html/yii/web/CController.php(287): IndexController->runAction()
+#6 /var/www/html/yii/web/CController.php(266): IndexController->runActionWithFilters()
+#7 /var/www/html/yii/web/CWebApplication.php(283): IndexController->run()
+#8 /var/www/html/yii/web/CWebApplication.php(142): CWebApplication->runController()
+#9 /var/www/html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /var/www/html/AOE/index.php(13): CWebApplication->run()
+REQUEST_URI=/AOE/main/Index?pk=6
+in /var/www/html/AOE/protected/views/main/index/index.php (34)
+in /var/www/html/AOE/protected/controllers/main/IndexController.php (28)
+in /var/www/html/AOE/index.php (13)
+2012/12/13 22:14:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "main".' in /var/www/html/yii/web/CWebApplication.php:287
+Stack trace:
+#0 /var/www/html/yii/web/CWebApplication.php(142): CWebApplication->runController('main')
+#1 /var/www/html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/AOE/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/AOE/main/
+---
+2012/12/13 22:16:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "Index/index".' in /var/www/html/yii/web/CWebApplication.php:287
+Stack trace:
+#0 /var/www/html/yii/web/CWebApplication.php(142): CWebApplication->runController('Index/index')
+#1 /var/www/html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/AOE/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/AOE/Index/index
+---

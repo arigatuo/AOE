@@ -11,6 +11,8 @@ class IndexController extends Controller
 	{
         $request = Yii::app()->request;
         $pk = $request->getParam("pk");
+        if(empty($pk))
+            $pk = 5;
         if(is_numeric($pk))
             $theItem = Item::model()->findByPk($pk);
         if(!empty($theItem) && $theItem != null){

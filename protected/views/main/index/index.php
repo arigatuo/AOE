@@ -9,7 +9,7 @@ $style = PhotoEditor::countInputStyle($imageWidth, $yPostion);
 ?>
 <style>
     #bg{position:relative;background:url("<?php echo $theItemAttributes['photo'];?>") no-repeat;width:<?php echo $imageWidth?>px;height:<?php echo $imageHeight;?>px;border:0;margin:0;padding:0}
-    .subtitle{font-weight:bold;border:1px dashed #ef5bc7;background:black;color:white;opacity:0.5;width:<?php echo $style['inputWidth'];?>px;left:<?php echo $style['inputLeft'];?>px;position:absolute;text-align:center;}
+    .subtitle{font-weight:bold;border:1px dotted #efe300;background:black;color:white;opacity:0.5;width:<?php echo $style['inputWidth'];?>px;left:<?php echo $style['inputLeft'];?>px;position:absolute;text-align:center;}
 </style>
 <link href="<?php echo Yii::app()->baseUrl;?>/css/jquery.selectbox.css" type="text/css" rel="stylesheet" />
 <script type="text/javascript" src="<?php echo Yii::app()->baseUrl;?>/js/jquery.selectbox-0.2.min.js"></script>
@@ -31,7 +31,7 @@ $style = PhotoEditor::countInputStyle($imageWidth, $yPostion);
         if($k % 2 == 0 && $k!=0 )
             $count++;
         ?>
-        <input class="subtitle" name="subtitle[<?php echo $count?>][]" type="text" style="top:<?php echo $y;?>px"/>
+        <input class="subtitle" maxlength="<?php echo !empty($details['lineMaxCount']) ? $details['lineMaxCount'] : 22;?>" name="subtitle[<?php echo $count?>][]" type="text" style="top:<?php echo $y;?>px"/>
         <?php
     }
     ?>
