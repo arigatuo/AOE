@@ -7,6 +7,10 @@ class IndexController extends Controller
     public function init(){
     }
 
+    public function actionTest(){
+        $this->render("test");
+    }
+
 	public function actionIndex()
 	{
         $request = Yii::app()->request;

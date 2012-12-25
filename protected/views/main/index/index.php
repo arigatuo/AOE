@@ -4,8 +4,8 @@ $imageInfo = getimagesize(str_replace(Yii::app()->baseUrl."/", "",$theItemAttrib
 $details = unserialize($theItemAttributes['Details']);
 $imageWidth = $details['width'];
 $imageHeight = $details['height'];
-$yPostion = explode(";", $details['yPosition']);
-$style = PhotoEditor::countInputStyle($imageWidth, $yPostion);
+$yPosition = explode(";", $details['yPosition']);
+$style = PhotoEditor::countInputStyle($imageWidth, $yPosition);
 ?>
 <style>
     #bg{position:relative;background:url("<?php echo $theItemAttributes['photo'];?>") no-repeat;width:<?php echo $imageWidth?>px;height:<?php echo $imageHeight;?>px;border:0;margin:0;padding:0}

@@ -1739,3 +1739,300 @@ Stack trace:
 #3 {main}
 REQUEST_URI=/AOE/Index/index
 ---
+2012/12/16 12:57:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "main/test".' in /var/www/html/yii/web/CWebApplication.php:287
+Stack trace:
+#0 /var/www/html/yii/web/CWebApplication.php(142): CWebApplication->runController('main/test')
+#1 /var/www/html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/AOE/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/AOE/main/test
+---
+2012/12/16 12:57:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "test".' in /var/www/html/yii/web/CController.php:484
+Stack trace:
+#0 /var/www/html/yii/web/CController.php(271): CController->missingAction('test')
+#1 /var/www/html/yii/web/CWebApplication.php(283): CController->run('test')
+#2 /var/www/html/yii/web/CWebApplication.php(142): CWebApplication->runController('main/Index/test')
+#3 /var/www/html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /var/www/html/AOE/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/AOE/main/Index/test
+---
+2012/12/16 12:57:54 [error] [exception.CException] exception 'CException' with message 'CWebApplication and its behaviors do not have a method or closure named "baseUrl".' in /var/www/html/yii/base/CComponent.php:266
+Stack trace:
+#0 /var/www/html/AOE/protected/views/layouts/front.php(6): CComponent->__call('baseUrl', Array)
+#1 /var/www/html/AOE/protected/views/layouts/front.php(6): CWebApplication->baseUrl()
+#2 /var/www/html/yii/web/CBaseController.php(127): require('/var/www/html/A...')
+#3 /var/www/html/yii/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/html/A...', Array, true)
+#4 /var/www/html/yii/web/CController.php(785): CBaseController->renderFile('/var/www/html/A...', Array, true)
+#5 /var/www/html/AOE/protected/controllers/main/IndexController.php(11): CController->render('test')
+#6 /var/www/html/yii/web/actions/CInlineAction.php(50): IndexController->actionTest()
+#7 /var/www/html/yii/web/CController.php(309): CInlineAction->runWithParams(Array)
+#8 /var/www/html/yii/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#9 /var/www/html/yii/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /var/www/html/yii/web/CWebApplication.php(283): CController->run('test')
+#11 /var/www/html/yii/web/CWebApplication.php(142): CWebApplication->runController('main/Index/test')
+#12 /var/www/html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#13 /var/www/html/AOE/index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/AOE/main/Index/test
+---
+2012/12/16 12:58:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "bootstrap/css/bootstarp.css".' in /var/www/html/yii/web/CWebApplication.php:287
+Stack trace:
+#0 /var/www/html/yii/web/CWebApplication.php(142): CWebApplication->runController('bootstrap/css/b...')
+#1 /var/www/html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/AOE/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/AOE/bootstrap/css/bootstarp.css
+HTTP_REFERER=http://www.myapp.com/AOE/main/Index/test
+---
+2012/12/16 12:58:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "bootstarp/js/bootstrap.js".' in /var/www/html/yii/web/CWebApplication.php:287
+Stack trace:
+#0 /var/www/html/yii/web/CWebApplication.php(142): CWebApplication->runController('bootstarp/js/bo...')
+#1 /var/www/html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/AOE/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/AOE/bootstarp/js/bootstrap.js
+HTTP_REFERER=http://www.myapp.com/AOE/main/Index/test
+---
+2012/12/16 13:01:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "bootstrap/css/bootstarp.css".' in /var/www/html/yii/web/CWebApplication.php:287
+Stack trace:
+#0 /var/www/html/yii/web/CWebApplication.php(142): CWebApplication->runController('bootstrap/css/b...')
+#1 /var/www/html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/AOE/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/AOE/bootstrap/css/bootstarp.css
+HTTP_REFERER=http://www.myapp.com/AOE/main/Index/test
+---
+2012/12/16 13:01:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "bootstarp/js/bootstrap.js".' in /var/www/html/yii/web/CWebApplication.php:287
+Stack trace:
+#0 /var/www/html/yii/web/CWebApplication.php(142): CWebApplication->runController('bootstarp/js/bo...')
+#1 /var/www/html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/AOE/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/AOE/bootstarp/js/bootstrap.js
+HTTP_REFERER=http://www.myapp.com/AOE/main/Index/test
+---
+2012/12/16 13:01:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "bootstrap/css/bootstarp.css".' in /var/www/html/yii/web/CWebApplication.php:287
+Stack trace:
+#0 /var/www/html/yii/web/CWebApplication.php(142): CWebApplication->runController('bootstrap/css/b...')
+#1 /var/www/html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/AOE/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/AOE/bootstrap/css/bootstarp.css
+HTTP_REFERER=http://www.myapp.com/AOE/main/Index/test
+---
+2012/12/16 13:01:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "bootstarp/js/bootstrap.js".' in /var/www/html/yii/web/CWebApplication.php:287
+Stack trace:
+#0 /var/www/html/yii/web/CWebApplication.php(142): CWebApplication->runController('bootstarp/js/bo...')
+#1 /var/www/html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/AOE/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/AOE/bootstarp/js/bootstrap.js
+HTTP_REFERER=http://www.myapp.com/AOE/main/Index/test
+---
+2012/12/16 13:02:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "bootstrap/css/bootstarp.css".' in /var/www/html/yii/web/CWebApplication.php:287
+Stack trace:
+#0 /var/www/html/yii/web/CWebApplication.php(142): CWebApplication->runController('bootstrap/css/b...')
+#1 /var/www/html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/AOE/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/AOE/bootstrap/css/bootstarp.css
+HTTP_REFERER=http://www.myapp.com/AOE/main/Index/test
+---
+2012/12/16 13:02:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "bootstarp/js/bootstrap.js".' in /var/www/html/yii/web/CWebApplication.php:287
+Stack trace:
+#0 /var/www/html/yii/web/CWebApplication.php(142): CWebApplication->runController('bootstarp/js/bo...')
+#1 /var/www/html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/AOE/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/AOE/bootstarp/js/bootstrap.js
+HTTP_REFERER=http://www.myapp.com/AOE/main/Index/test
+---
+2012/12/16 13:03:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "bootstrap/css/bootstarp.css".' in /var/www/html/yii/web/CWebApplication.php:287
+Stack trace:
+#0 /var/www/html/yii/web/CWebApplication.php(142): CWebApplication->runController('bootstrap/css/b...')
+#1 /var/www/html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/AOE/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/AOE/bootstrap/css/bootstarp.css
+HTTP_REFERER=http://www.myapp.com/AOE/main/Index/test
+---
+2012/12/16 13:03:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "bootstarp/js/bootstrap.js".' in /var/www/html/yii/web/CWebApplication.php:287
+Stack trace:
+#0 /var/www/html/yii/web/CWebApplication.php(142): CWebApplication->runController('bootstarp/js/bo...')
+#1 /var/www/html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/AOE/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/AOE/bootstarp/js/bootstrap.js
+HTTP_REFERER=http://www.myapp.com/AOE/main/Index/test
+---
+2012/12/16 13:04:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "bootstrap/css/bootstarp.css".' in /var/www/html/yii/web/CWebApplication.php:287
+Stack trace:
+#0 /var/www/html/yii/web/CWebApplication.php(142): CWebApplication->runController('bootstrap/css/b...')
+#1 /var/www/html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/AOE/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/AOE/bootstrap/css/bootstarp.css
+HTTP_REFERER=http://www.myapp.com/AOE/main/Index/test
+---
+2012/12/16 13:04:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "bootstarp/js/bootstrap.js".' in /var/www/html/yii/web/CWebApplication.php:287
+Stack trace:
+#0 /var/www/html/yii/web/CWebApplication.php(142): CWebApplication->runController('bootstarp/js/bo...')
+#1 /var/www/html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/AOE/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/AOE/bootstarp/js/bootstrap.js
+HTTP_REFERER=http://www.myapp.com/AOE/main/Index/test
+---
+2012/12/16 13:04:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "bootstrap/css/bootstarp.css".' in /var/www/html/yii/web/CWebApplication.php:287
+Stack trace:
+#0 /var/www/html/yii/web/CWebApplication.php(142): CWebApplication->runController('bootstrap/css/b...')
+#1 /var/www/html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/AOE/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/AOE/bootstrap/css/bootstarp.css
+HTTP_REFERER=http://www.myapp.com/AOE/main/Index/test
+---
+2012/12/16 13:04:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "bootstarp/js/bootstrap.js".' in /var/www/html/yii/web/CWebApplication.php:287
+Stack trace:
+#0 /var/www/html/yii/web/CWebApplication.php(142): CWebApplication->runController('bootstarp/js/bo...')
+#1 /var/www/html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/AOE/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/AOE/bootstarp/js/bootstrap.js
+HTTP_REFERER=http://www.myapp.com/AOE/main/Index/test
+---
+2012/12/16 13:04:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "bootstrap/css/bootstarp.css".' in /var/www/html/yii/web/CWebApplication.php:287
+Stack trace:
+#0 /var/www/html/yii/web/CWebApplication.php(142): CWebApplication->runController('bootstrap/css/b...')
+#1 /var/www/html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/AOE/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/AOE/bootstrap/css/bootstarp.css
+HTTP_REFERER=http://www.myapp.com/AOE/main/Index/test
+---
+2012/12/16 13:04:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "bootstarp/js/bootstrap.js".' in /var/www/html/yii/web/CWebApplication.php:287
+Stack trace:
+#0 /var/www/html/yii/web/CWebApplication.php(142): CWebApplication->runController('bootstarp/js/bo...')
+#1 /var/www/html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/AOE/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/AOE/bootstarp/js/bootstrap.js
+HTTP_REFERER=http://www.myapp.com/AOE/main/Index/test
+---
+2012/12/16 13:04:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "bootstrap/css/bootstarp.css".' in /var/www/html/yii/web/CWebApplication.php:287
+Stack trace:
+#0 /var/www/html/yii/web/CWebApplication.php(142): CWebApplication->runController('bootstrap/css/b...')
+#1 /var/www/html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/AOE/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/AOE/bootstrap/css/bootstarp.css
+HTTP_REFERER=http://www.myapp.com/AOE/main/Index/test
+---
+2012/12/16 13:04:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "bootstarp/js/bootstrap.js".' in /var/www/html/yii/web/CWebApplication.php:287
+Stack trace:
+#0 /var/www/html/yii/web/CWebApplication.php(142): CWebApplication->runController('bootstarp/js/bo...')
+#1 /var/www/html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/AOE/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/AOE/bootstarp/js/bootstrap.js
+HTTP_REFERER=http://www.myapp.com/AOE/main/Index/test
+---
+2012/12/16 13:04:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "bootstrap/css/bootstarp.css".' in /var/www/html/yii/web/CWebApplication.php:287
+Stack trace:
+#0 /var/www/html/yii/web/CWebApplication.php(142): CWebApplication->runController('bootstrap/css/b...')
+#1 /var/www/html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/AOE/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/AOE/bootstrap/css/bootstarp.css
+HTTP_REFERER=http://www.myapp.com/AOE/main/Index/test
+---
+2012/12/16 13:04:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "bootstarp/js/bootstrap.js".' in /var/www/html/yii/web/CWebApplication.php:287
+Stack trace:
+#0 /var/www/html/yii/web/CWebApplication.php(142): CWebApplication->runController('bootstarp/js/bo...')
+#1 /var/www/html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/AOE/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/AOE/bootstarp/js/bootstrap.js
+HTTP_REFERER=http://www.myapp.com/AOE/main/Index/test
+---
+2012/12/16 13:04:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "bootstarp/js/bootstrap.js".' in /var/www/html/yii/web/CWebApplication.php:287
+Stack trace:
+#0 /var/www/html/yii/web/CWebApplication.php(142): CWebApplication->runController('bootstarp/js/bo...')
+#1 /var/www/html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/AOE/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/AOE/bootstarp/js/bootstrap.js
+HTTP_REFERER=http://www.myapp.com/AOE/main/Index/test
+---
+2012/12/16 13:04:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "bootstrap/css/bootstarp.css".' in /var/www/html/yii/web/CWebApplication.php:287
+Stack trace:
+#0 /var/www/html/yii/web/CWebApplication.php(142): CWebApplication->runController('bootstrap/css/b...')
+#1 /var/www/html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/AOE/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/AOE/bootstrap/css/bootstarp.css
+HTTP_REFERER=http://www.myapp.com/AOE/main/Index/test
+---
+2012/12/16 13:07:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "bootstrap/css/bootstarp.css".' in /var/www/html/yii/web/CWebApplication.php:287
+Stack trace:
+#0 /var/www/html/yii/web/CWebApplication.php(142): CWebApplication->runController('bootstrap/css/b...')
+#1 /var/www/html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/AOE/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/AOE/bootstrap/css/bootstarp.css
+HTTP_REFERER=http://www.myapp.com/AOE/main/Index/test
+---
+2012/12/16 13:07:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "bootstarp/js/bootstrap.js".' in /var/www/html/yii/web/CWebApplication.php:287
+Stack trace:
+#0 /var/www/html/yii/web/CWebApplication.php(142): CWebApplication->runController('bootstarp/js/bo...')
+#1 /var/www/html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/AOE/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/AOE/bootstarp/js/bootstrap.js
+HTTP_REFERER=http://www.myapp.com/AOE/main/Index/test
+---
+2012/12/16 13:07:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "bootstarp/js/bootstrap.js".' in /var/www/html/yii/web/CWebApplication.php:287
+Stack trace:
+#0 /var/www/html/yii/web/CWebApplication.php(142): CWebApplication->runController('bootstarp/js/bo...')
+#1 /var/www/html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/AOE/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/AOE/bootstarp/js/bootstrap.js
+HTTP_REFERER=http://www.myapp.com/AOE/main/Index/test
+---
+2012/12/16 13:07:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "bootstrap/css/bootstarp.css".' in /var/www/html/yii/web/CWebApplication.php:287
+Stack trace:
+#0 /var/www/html/yii/web/CWebApplication.php(142): CWebApplication->runController('bootstrap/css/b...')
+#1 /var/www/html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/AOE/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/AOE/bootstrap/css/bootstarp.css
+HTTP_REFERER=http://www.myapp.com/AOE/main/Index/test
+---
+2012/12/16 13:07:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "bootstrap/css/bootstarp.css".' in /var/www/html/yii/web/CWebApplication.php:287
+Stack trace:
+#0 /var/www/html/yii/web/CWebApplication.php(142): CWebApplication->runController('bootstrap/css/b...')
+#1 /var/www/html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/AOE/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/AOE/bootstrap/css/bootstarp.css
+HTTP_REFERER=http://www.myapp.com/AOE/main/Index/test
+---
+2012/12/16 13:07:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "bootstarp/js/bootstrap.js".' in /var/www/html/yii/web/CWebApplication.php:287
+Stack trace:
+#0 /var/www/html/yii/web/CWebApplication.php(142): CWebApplication->runController('bootstarp/js/bo...')
+#1 /var/www/html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/AOE/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/AOE/bootstarp/js/bootstrap.js
+HTTP_REFERER=http://www.myapp.com/AOE/main/Index/test
+---
+2012/12/17 13:54:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "Index/test".' in /var/www/html/yii/web/CWebApplication.php:287
+Stack trace:
+#0 /var/www/html/yii/web/CWebApplication.php(142): CWebApplication->runController('Index/test')
+#1 /var/www/html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/AOE/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/AOE/Index/test
+---
